@@ -1,6 +1,5 @@
-
 import { Idea, Task, IdeaCategory, IdeaStatus } from "./types";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 
 // Internal data structures
 const IDEAS_STORAGE_KEY = "ideas-stack-data";

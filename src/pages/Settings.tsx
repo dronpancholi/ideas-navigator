@@ -1,8 +1,7 @@
-
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { Download, Upload, Trash2, Save } from "lucide-react";
-import { toast } from "@/components/ui/sonner";
+import { Download, Upload, Trash2 } from "lucide-react";
+import { toast } from "@/lib/toast";
 import { exportData, importData, loadIdeas } from "@/lib/store";
 import Navbar from "@/components/Navbar";
 
