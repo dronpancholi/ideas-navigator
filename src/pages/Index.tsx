@@ -7,7 +7,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { Idea } from "@/lib/types";
 import { loadIdeas } from "@/lib/store";
 import IdeaCard from "@/components/IdeaCard";
-import Navbar from "@/components/Navbar";
+import ExtendedNavbar from "@/components/ExtendedNavbar";
 
 const Index = () => {
   const [ideas, setIdeas] = useState<Idea[]>([]);
@@ -53,9 +53,12 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.1 }}
         >
-          <h1 className="text-2xl font-semibold text-center mb-4">
+          <h1 className="text-2xl font-semibold text-center mb-1">
             First Projects - Ideas Stack
           </h1>
+          <p className="text-xs text-center text-muted-foreground mb-4">
+            Developed by Dron Pancholi
+          </p>
           
           {/* Search bar */}
           <div className="relative max-w-md mx-auto">
@@ -124,7 +127,7 @@ const Index = () => {
         </Link>
       )}
       
-      <Navbar />
+      <ExtendedNavbar />
     </motion.div>
   );
 };

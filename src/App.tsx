@@ -9,6 +9,7 @@ import AddIdea from "./pages/AddIdea";
 import IdeaDetails from "./pages/IdeaDetails";
 import TaskTracker from "./pages/TaskTracker";
 import Settings from "./pages/Settings";
+import ChatAssistant from "./pages/ChatAssistant";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/idea/:id" element={<IdeaDetails />} />
           <Route path="/tasks" element={<TaskTracker />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/chat" element={<ChatAssistant />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
